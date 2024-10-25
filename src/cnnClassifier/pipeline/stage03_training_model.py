@@ -14,8 +14,7 @@ class ModelTrainingPipeline:
         training = Training(config=training_config)
         training.get_base_model()
         training.train_valid_generator()
-        training.train(
-        )
+        training.train()
 
 
 if __name__ ==  '__main__':

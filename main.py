@@ -14,7 +14,7 @@ except Exception as e:
     raise e
 
 
-TAGE_NAME = "Prepare Base Model"
+STAGE_NAME = "Prepare Base Model"
 try:
     logger.info(f">>>>> stage {STAGE_NAME} started <<<<<<<<")
     obj = PrepareBaseModelTrainingPipeline()
@@ -25,7 +25,7 @@ except Exception as e:
     raise e
 
 
-TAGE_NAME = "Training"
+STAGE_NAME = "Training"
 try:
     logger.info(f">>>>> stage {STAGE_NAME} started <<<<<<<<")
     obj = ModelTrainingPipeline()
